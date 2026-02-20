@@ -954,7 +954,7 @@
                     1024: { slidesPerView: 4, spaceBetween: 0 },
                     1200: { slidesPerView: 5, spaceBetween: 0 },
                     1400: { slidesPerView: 6, spaceBetween: 0 },
-                    1600: { slidesPerView: 7, spaceBetween: 0 },
+                    //1600: { slidesPerView: 7, spaceBetween: 0 },
                 },
             });
 
