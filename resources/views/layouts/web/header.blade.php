@@ -13,7 +13,7 @@
         </div>
     </div>
 </div>
-<nav class="navbar navbar-expand-lg bg-body-tertiary" id="mainNavbar">
+<nav class="navbar navbar-expand-lg bg-body-white" id="mainNavbar">
     <div class="container-fluid">
         <a class="navbar-brand" href="{{ route('home') }}"><img src="{{ asset('storage/assets/web/img/logo.png') }}"
                 alt="" width="240" /></a>

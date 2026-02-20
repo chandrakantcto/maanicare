@@ -1,4 +1,22 @@
 @extends('layouts.app')
+
+@section('meta')
+    @php
+        $shareUrl = route('case-studies.show', $caseStudy->slug);
+        $shareImage = $caseStudy->hero_image ? asset('storage/' . $caseStudy->hero_image) : asset('storage/assets/web/img/Rectangle-1646.jpg');
+        $shareDesc = $caseStudy->short_description ? Str::limit(strip_tags($caseStudy->short_description), 160) : $caseStudy->title;
+    @endphp
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="{{ $shareUrl }}">
+    <meta property="og:title" content="{{ $caseStudy->title }}">
+    <meta property="og:description" content="{{ $shareDesc }}">
+    <meta property="og:image" content="{{ $shareImage }}">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="{{ $caseStudy->title }}">
+    <meta name="twitter:description" content="{{ $shareDesc }}">
+    <meta name="twitter:image" content="{{ $shareImage }}">
+@endsection
+
 @section('content')
     <div class="container-fluid">
         <section class="blog-detail">
@@ -11,8 +29,12 @@
                 </div>
                 <div class="blogdetails">
                     <div class="blog-meta">
-                        <span>{{ max(1, (int) (str_word_count(strip_tags($caseStudy->short_description)) / 150)) }} MIN READ</span>
-                        <span><img src="{{ asset('storage/assets/web/img/ios_share.svg') }}" alt="" />SHARE</span>
+                        <span>{{ $caseStudy->published_at ? $caseStudy->published_at->diffForHumans() : '—' }}</span>
+                        @include('partials.share-dropdown', [
+                            'shareTitle' => $caseStudy->title,
+                            'shareUrl' => route('case-studies.show', $caseStudy->slug),
+                            'shareImage' => $heroImg ?? '',
+                        ])
                     </div>
                     @if($caseStudy->subtitle)
                         <div class="blog-subtitle">{{ $caseStudy->subtitle }}</div>

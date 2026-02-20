@@ -1945,7 +1945,7 @@ font-size: 16px;
 .filter-btn.active,
 .filter-btn:hover {
 background: #C89C66;
-color: #000;
+color: #fff;
 }
 
 .case-grid {

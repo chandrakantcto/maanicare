@@ -1,4 +1,23 @@
 @extends('layouts.app')
+
+@section('meta')
+    @php
+        $shareUrl = route('blog.show', $blog->slug);
+        $defaultImg = asset('storage/assets/web/img/Rectangle-1646.jpg');
+        $shareImage = $blog->featured_image ? asset('storage/' . $blog->featured_image) : ($blog->thumbnail ? asset('storage/' . $blog->thumbnail) : $defaultImg);
+        $shareDesc = $blog->excerpt ? Str::limit(strip_tags($blog->excerpt), 160) : Str::limit(strip_tags($blog->content), 160);
+    @endphp
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="{{ $shareUrl }}">
+    <meta property="og:title" content="{{ $blog->title }}">
+    <meta property="og:description" content="{{ $shareDesc }}">
+    <meta property="og:image" content="{{ $shareImage }}">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="{{ $blog->title }}">
+    <meta name="twitter:description" content="{{ $shareDesc }}">
+    <meta name="twitter:image" content="{{ $shareImage }}">
+@endsection
+
 @section('content')
 <div class="container-fluid">
     <section class="blog-detail">
@@ -15,8 +34,12 @@
             <!-- CONTENT COLUMN -->
             <div class="blogdetails">
                 <div class="blog-meta">
-                    <span>{{ $blog->reading_time_minutes ?? max(1, (int)(str_word_count(strip_tags($blog->content)) / 150)) }} MIN READ</span>
-                    <span><img src="{{ asset('storage/assets/web/img/ios_share.svg') }}" />SHARE</span>
+                    <span>{{ $blog->published_at ? $blog->published_at->diffForHumans() : '—' }}</span>
+                    @include('partials.share-dropdown', [
+                        'shareTitle' => $blog->title,
+                        'shareUrl' => route('blog.show', $blog->slug),
+                        'shareImage' => $heroImg ?? '',
+                    ])
                 </div>
 
                 @if($blog->category)

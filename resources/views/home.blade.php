@@ -11,8 +11,10 @@
                         people, and facilities with precision, accountability, and long-term value.
                     </p>
                     <div class="maiclisderbutton d-md-flex justify-content-center gap-3">
-                        <button type="button" class="btn btn-white mb-2 mb-md-0"><a href="{{ route('clients') }}">Speak to Our Team</a></button>
-                        <button type="button" class="btn btn-outline"><a href="{{ route('services.index') }}">Explore Our Services<a/></button>
+                        <button type="button" class="btn btn-white mb-2 mb-md-0"><a href="{{ route('clients') }}">Speak to Our
+                                Team</a></button>
+                        <button type="button" class="btn btn-outline"><a href="{{ route('services.index') }}">Explore Our
+                                Services<a /></button>
                     </div>
                     <ul class="sliderbotmTxt">
                         <li>
@@ -41,8 +43,10 @@
                         precision—balancing design intent, timelines, safety, and execution without compromise.
                     </p>
                     <div class="maiclisderbutton d-md-flex justify-content-center gap-3">
-                        <button type="button" class="btn btn-white"><a href="{{ route('clients') }}">Speak to Our Team</a></button>
-                        <button type="button" class="btn btn-outline"><a href="{{ route('projects.index') }}">View Our Projects</a></button>
+                        <button type="button" class="btn btn-white"><a href="{{ route('clients') }}">Speak to Our
+                                Team</a></button>
+                        <button type="button" class="btn btn-outline"><a href="{{ route('projects.index') }}">View Our
+                                Projects</a></button>
                     </div>
                     <ul class="sliderbotmTxt">
                         <li>
@@ -72,7 +76,8 @@
                         control.
                     </p>
                     <div class="maiclisderbutton d-md-flex justify-content-center gap-3">
-                        <button type="button" class="btn btn-white"><a href="{{ route('clients') }}">Speak to Our Team</a></button>
+                        <button type="button" class="btn btn-white"><a href="{{ route('clients') }}">Speak to Our
+                                Team</a></button>
                         <button type="button" class="btn btn-outline">Explore Our Approach</button>
                     </div>
                     <ul class="sliderbotmTxt">
@@ -102,7 +107,8 @@
                         maintenance, and consistency delivered through disciplined processes and accountable teams.
                     </p>
                     <div class="maiclisderbutton d-md-flex justify-content-center gap-3">
-                        <button type="button" class="btn btn-white"><a href="{{ route('clients') }}">Speak to Our Team</a></button>
+                        <button type="button" class="btn btn-white"><a href="{{ route('clients') }}">Speak to Our
+                                Team</a></button>
                         <button type="button" class="btn btn-outline">See How We Operate</button>
                     </div>
                     <ul class="sliderbotmTxt">
@@ -128,28 +134,26 @@
         <div class="container-fluid">
             <div class="servicesMain">
                 <div class="servicesColumn justify-content-between">
-                        <div class="servicesInner">
-                            <img src="{{ asset('storage/assets/web/img/deployed_code.svg') }}" alt=""
-                                width="30" />
-                            <strong>Project & Fit-Out Services</strong>
-                        </div>
-                        <div class="servicesInner">
-                            <img src="{{ asset('storage/assets/web/img/contract_edit.svg') }}" alt=""
-                                width="30" />
-                            <strong>Staffing, Payroll & Compliance Services</strong>
-                        </div>
-                        <div class="servicesInner">
-                            <img src="{{ asset('storage/assets/web/img/graph_5.svg') }}" width="30" />
-                            <strong>Integrated Facility Management Services</strong>
-                        </div>
-                        <div class="servicesInner justify-content-lg-end">
-                            <img src="{{ asset('storage/assets/web/img/task_alt.svg') }}" alt="" width="30" />
-                            <strong>On-Demand Services</strong>
-                        </div>
+                    <div class="servicesInner">
+                        <img src="{{ asset('storage/assets/web/img/deployed_code.svg') }}" alt="" width="30" />
+                        <strong>Project & Fit-Out Services</strong>
+                    </div>
+                    <div class="servicesInner">
+                        <img src="{{ asset('storage/assets/web/img/contract_edit.svg') }}" alt="" width="30" />
+                        <strong>Staffing, Payroll & Compliance Services</strong>
+                    </div>
+                    <div class="servicesInner">
+                        <img src="{{ asset('storage/assets/web/img/graph_5.svg') }}" width="30" />
+                        <strong>Integrated Facility Management Services</strong>
+                    </div>
+                    <div class="servicesInner justify-content-lg-end">
+                        <img src="{{ asset('storage/assets/web/img/task_alt.svg') }}" alt="" width="30" />
+                        <strong>On-Demand Services</strong>
+                    </div>
                 </div>
             </div>
-            
-            
+
+
         </div>
     </section>
 
@@ -183,10 +187,10 @@
                     </div>
                     <div class="col-md-5">
                         <p>
-                         Behind every well-run workplace is a structure you don’t see. <br>Maanicare operates across
+                            Behind every well-run workplace is a structure you don’t see. <br>Maanicare operates across
                             projects, people, and facilities. Bringing order to complexity and ensuring every moving
                             part works in sync, every single day.</p>
-                        
+
                     </div>
                 </div>
             </div>
@@ -202,12 +206,13 @@
                                 width="30" />
                             <p class="card-text">
                                 <span class="d-block"> PROJECT & FIT-OUT SERVICES </span>
-                                End-to-end interior and infrastructure projects delivered with precision, safety, and design excellence. From concept to completion.
+                                End-to-end interior and infrastructure projects delivered with precision, safety, and design
+                                excellence. From concept to completion.
                             </p>
                         </div>
                         <div class="d-flex align-items-center">
-                           <a href="{{ route('services.project-and-fit-out') }}" class="card-link"> View Projects </a><img
-                                src="{{ asset('storage/assets/web/img/arrow-golden.svg') }}" alt=""
+                            <a href="{{ route('services.project-and-fit-out') }}" class="card-link"> View Projects
+                            </a><img src="{{ asset('storage/assets/web/img/arrow-golden.svg') }}" alt=""
                                 class="ms-2" />
                         </div>
                     </div>
@@ -223,20 +228,20 @@
                                 width="30" />
                             <p class="card-text">
                                 <span class="d-block"> Staffing, Payroll & Compliance Services </span>
-                                Reliable workforce solutions supported by structured payroll systems, statutory compliance, and risk-managed processes.
+                                Reliable workforce solutions supported by structured payroll systems, statutory compliance,
+                                and risk-managed processes.
                             </p>
                         </div>
                         <div class="d-flex align-items-center">
-                            <a href="{{ route('services.staffing-payroll-and-compliance') }}" class="card-link"> Explore Workforce Solutions </a><img
-                                src="{{ asset('storage/assets/web/img/arrow-golden.svg') }}" alt=""
-                                class="ms-2" />
+                            <a href="{{ route('services.staffing-payroll-and-compliance') }}" class="card-link"> Explore
+                                Workforce Solutions </a><img src="{{ asset('storage/assets/web/img/arrow-golden.svg') }}"
+                                alt="" class="ms-2" />
                         </div>
                     </div>
                 </div>
                 <div class="service-card">
                     <div class="card-image">
-                        <img src="{{ asset('storage/assets/web/img/three.png') }}"
-                            alt="Project & Fit-Out" />
+                        <img src="{{ asset('storage/assets/web/img/three.png') }}" alt="Project & Fit-Out" />
                     </div>
                     <div class="card-content">
                         <div class="card-tag">
@@ -244,21 +249,21 @@
                                 width="30" />
                             <p class="card-text">
                                 <span class="d-block"> Integrated Facility Management Services </span>
-                                Seamless day-to-day operations covering housekeeping, technical services, and site management, ensuring workdays without disruption.
+                                Seamless day-to-day operations covering housekeeping, technical services, and site
+                                management, ensuring workdays without disruption.
                             </p>
                         </div>
                         <div class="d-flex align-items-center">
-                            <a href="{{ route('services.integrated-facility-management') }}" class="card-link"> Discover IFM Services </a><img
-                                src="{{ asset('storage/assets/web/img/arrow-golden.svg') }}" alt=""
-                                class="ms-2" />
+                            <a href="{{ route('services.integrated-facility-management') }}" class="card-link"> Discover
+                                IFM Services </a><img src="{{ asset('storage/assets/web/img/arrow-golden.svg') }}"
+                                alt="" class="ms-2" />
                         </div>
                     </div>
                 </div>
-                
-                 <div class="service-card">
+
+                <div class="service-card">
                     <div class="card-image">
-                        <img src="{{ asset('storage/assets/web/img/fours.jpg') }}"
-                            alt="Project & Fit-Out" />
+                        <img src="{{ asset('storage/assets/web/img/fours.jpg') }}" alt="Project & Fit-Out" />
                     </div>
                     <div class="card-content">
                         <div class="card-tag">
@@ -266,17 +271,18 @@
                                 width="30" />
                             <p class="card-text">
                                 <span class="d-block"> On-Demand Services </span>
-                                Flexible, responsive service support designed for speed, scalability, and immediate operational needs.
+                                Flexible, responsive service support designed for speed, scalability, and immediate
+                                operational needs.
                             </p>
                         </div>
                         <div class="d-flex align-items-center">
-                            <a href="{{ route('services.on-demand') }}" class="card-link"> See On-Demand Offerings </a><img
-                                src="{{ asset('storage/assets/web/img/arrow-golden.svg') }}" alt=""
+                            <a href="{{ route('services.on-demand') }}" class="card-link"> See On-Demand Offerings
+                            </a><img src="{{ asset('storage/assets/web/img/arrow-golden.svg') }}" alt=""
                                 class="ms-2" />
                         </div>
                     </div>
                 </div>
-                
+
             </div>
         </div>
     </section>
@@ -403,8 +409,9 @@
             <div class="d-md-flex justify-content-between align-items-center mb-md-4 mb-3">
                 <p class="section-eyebrow mb-3 mb-md-2">Trusted by industry leaders</p>
                 <div class="d-flex align-items-center beyond">
-                    <a href="{{ route('clients') }}" class="ms-md-2 ms-0 my-md-0 my-2" tabindex="0"> discover the beyond </a><img
-                        src="{{ asset('storage/assets/web/img/arrow-golden.svg') }}" alt="" class="ms-2" />
+                    <a href="{{ route('clients') }}" class="ms-md-2 ms-0 my-md-0 my-2" tabindex="0"> discover the
+                        beyond </a><img src="{{ asset('storage/assets/web/img/arrow-golden.svg') }}" alt=""
+                        class="ms-2" />
                 </div>
             </div>
             <ul class="logosUl">
@@ -459,8 +466,8 @@
                 <div class="swiper-slide sector-card">
                     <img src="{{ asset('storage/assets/web/img/Mask group (5).png') }}" />
                     <div class="sector-label">
-                        <img src="{{ asset('storage/assets/web/img/factory.svg') }}" alt=""
-                            width="20" /> Manufacturing
+                        <img src="{{ asset('storage/assets/web/img/factory.svg') }}" alt="" width="20" />
+                        Manufacturing
                     </div>
                 </div>
 
@@ -474,8 +481,8 @@
 
                 <div class="swiper-slide sector-card">
                     <img src="{{ asset('storage/assets/web/img/Mask group (7).png') }}" />
-                    <div class="sector-label"><img src="{{ asset('storage/assets/web/img/memory.svg') }}"
-                            alt="" width="20" />
+                    <div class="sector-label"><img src="{{ asset('storage/assets/web/img/memory.svg') }}" alt=""
+                            width="20" />
                         Information Technology</div>
                 </div>
 
@@ -485,14 +492,14 @@
                             alt="" width="20" />
                         Banking</div>
                 </div>
-                
+
                 <div class="swiper-slide sector-card">
                     <img src="{{ asset('storage/assets/web/img/Mask group (9).png') }}" />
-                    <div class="sector-label"><img src="{{ asset('storage/assets/web/img/home.svg') }}"
-                            alt="" width="20" />
+                    <div class="sector-label"><img src="{{ asset('storage/assets/web/img/home.svg') }}" alt=""
+                            width="20" />
                         Residential</div>
                 </div>
-                
+
                 <div class="swiper-slide sector-card">
                     <img src="{{ asset('storage/assets/web/img/Mask group (10).png') }}" />
                     <div class="sector-label"><img src="{{ asset('storage/assets/web/img/more_horiz.svg') }}"
@@ -500,93 +507,96 @@
                         & More</div>
                 </div>
             </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev swiper-prev-legacy-slider-69985434a0dd8"></div>
+            <div class="swiper-button-next swiper-next-legacy-slider-69985434a0dd8"></div>
         </div>
     </section>
 
     <section class="why-us-section">
-          <div class="row">
-        <div class="why-container">
-            <!-- Top Content -->
-         <div class="col-md-12 col-lg-2 ">   
-            <div class="why-header">
-                <span class="why-tag">WHY US</span>
-              
+        <div class="row">
+            <div class="why-container">
+                <!-- Top Content -->
+                <div class="col-md-12 col-lg-2 ">
+                    <div class="why-header">
+                        <span class="why-tag">WHY US</span>
+
+                    </div>
+                </div>
+
+                <!-- Features Grid -->
+                <div class="col-md-12 col-lg-10">
+                    <p class="why-text">
+                        Maanicare integrates people, projects, and processes under one accountable framework. Delivering
+                        consistent execution, assured compliance, and spaces built to perform.
+                    </p>
+                    <div class="why-grid">
+                        <div class="why-item">
+                            <div class="icon"><img src="{{ asset('storage/assets/web/img/Integrated.svg') }}"
+                                    alt="" /></div>
+                            <div>
+                                <h4>INTEGRATED</h4>
+                                <p>
+                                    Integrated services under one accountable partner, reducing complexity and coordination
+                                    gaps
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="why-item">
+                            <div class="icon"><img src="{{ asset('storage/assets/web/img/compliance-Focused.svg') }}"
+                                    alt="" /></div>
+                            <div>
+                                <h4>COMPLIANCE FOCUSED</h4>
+                                <p>
+                                    Strong governance and compliance-led processes, designed to be audit-ready at every
+                                    stage
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="why-item">
+                            <div class="icon"><img src="{{ asset('storage/assets/web/img/experienced-Teams.svg') }}"
+                                    alt="" /></div>
+                            <div>
+                                <h4>EXPERIENCED TEAMS</h4>
+                                <p>Experienced on-ground teams backed by structured planning and central oversight</p>
+                            </div>
+                        </div>
+
+                        <div class="why-item">
+                            <div class="icon"><img src="{{ asset('storage/assets/web/img/monitoring.svg') }}"
+                                    alt="" /></div>
+                            <div>
+                                <h4>TRANSPARENT KPI’S</h4>
+                                <p>Transparent reporting and performance benchmarks for clear visibility and control</p>
+                            </div>
+                        </div>
+
+                        <div class="why-item">
+                            <div class="icon"><img src="{{ asset('storage/assets/web/img/peoplefirst.svg') }}"
+                                    alt="" /></div>
+                            <div>
+                                <h4>PEOPLE FIRST</h4>
+                                <p>Safety-first execution and people-centric practices embedded across all operations</p>
+                            </div>
+                        </div>
+
+                        <div class="why-item">
+                            <div class="icon"><img src="{{ asset('storage/assets/web/img/expand_content.svg') }}"
+                                    alt="" /></div>
+                            <div>
+                                <h4>SCALABLE SOLUTIONS</h4>
+                                <p>
+                                    Consistent delivery at scale, ensuring reliability across sites, cities, and service
+                                    lines
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
-              </div>
-
-            <!-- Features Grid -->
-              <div class="col-md-12 col-lg-10"> 
-               <p class="why-text">
-                    Maanicare integrates people, projects, and processes under one accountable framework. Delivering
-                    consistent execution, assured compliance, and spaces built to perform.
-                </p>
-            <div class="why-grid">
-                <div class="why-item">
-                    <div class="icon"><img src="{{ asset('storage/assets/web/img/Integrated.svg') }}"
-                            alt="" /></div>
-                    <div>
-                        <h4>INTEGRATED</h4>
-                        <p>
-                            Integrated services under one accountable partner, reducing complexity and coordination
-                            gaps
-                        </p>
-                    </div>
-                </div>
-
-                <div class="why-item">
-                    <div class="icon"><img src="{{ asset('storage/assets/web/img/compliance-Focused.svg') }}"
-                            alt="" /></div>
-                    <div>
-                        <h4>COMPLIANCE FOCUSED</h4>
-                        <p>
-                            Strong governance and compliance-led processes, designed to be audit-ready at every
-                            stage
-                        </p>
-                    </div>
-                </div>
-
-                <div class="why-item">
-                    <div class="icon"><img src="{{ asset('storage/assets/web/img/experienced-Teams.svg') }}"
-                            alt="" /></div>
-                    <div>
-                        <h4>EXPERIENCED TEAMS</h4>
-                        <p>Experienced on-ground teams backed by structured planning and central oversight</p>
-                    </div>
-                </div>
-
-                <div class="why-item">
-                    <div class="icon"><img src="{{ asset('storage/assets/web/img/monitoring.svg') }}"
-                            alt="" /></div>
-                    <div>
-                        <h4>TRANSPARENT KPI’S</h4>
-                        <p>Transparent reporting and performance benchmarks for clear visibility and control</p>
-                    </div>
-                </div>
-
-                <div class="why-item">
-                    <div class="icon"><img src="{{ asset('storage/assets/web/img/peoplefirst.svg') }}"
-                            alt="" /></div>
-                    <div>
-                        <h4>PEOPLE FIRST</h4>
-                        <p>Safety-first execution and people-centric practices embedded across all operations</p>
-                    </div>
-                </div>
-
-                <div class="why-item">
-                    <div class="icon"><img src="{{ asset('storage/assets/web/img/expand_content.svg') }}"
-                            alt="" /></div>
-                    <div>
-                        <h4>SCALABLE SOLUTIONS</h4>
-                        <p>
-                            Consistent delivery at scale, ensuring reliability across sites, cities, and service
-                            lines
-                        </p>
-                    </div>
-                </div>
-            </div>
-               </div>
-            
-        </div>    
         </div>
     </section>
 
@@ -623,9 +633,9 @@
         <!-- Image -->
         <div class="sustainability-image">
             <!--<img src="{{ asset('storage/assets/web/img/bg-sec.jpg') }}" alt="Sustainability" />-->
-              <video autoplay muted loop playsinline>
-    <source src="{{ asset('storage/assets/web/img/0_Trees_Swaying_3840x2160 (1).mp4') }}" type="video/mp4">
-  </video>
+            <video autoplay muted loop playsinline>
+                <source src="{{ asset('storage/assets/web/img/0_Trees_Swaying_3840x2160 (1).mp4') }}" type="video/mp4">
+            </video>
         </div>
         <!-- Bottom Content -->
         <div class="sustainability-bottom">
@@ -637,7 +647,8 @@
             </p>
 
             <div class="d-flex align-items-center beyond">
-                <a href="{{ route('our-story') }}" class="ms-md-2 ms-0 my-md-0 my-2 knowMorebtn" tabindex="0"> know more about us
+                <a href="{{ route('our-story') }}" class="ms-md-2 ms-0 my-md-0 my-2 knowMorebtn" tabindex="0"> know
+                    more about us
                 </a><img src="{{ asset('storage/assets/web/img/arrow-golden.svg') }}" alt="" class="ms-2" />
             </div>
         </div>
@@ -729,7 +740,8 @@
                         <li>
                             <span>{{ $caseStudy->title }}</span>
                             <a href="{{ route('case-studies.show', $caseStudy->slug) }}" class="insight-link">
-                                <i><img src="{{ asset('storage/assets/web/img/arrow-golden.svg') }}" alt="" /></i>
+                                <i><img src="{{ asset('storage/assets/web/img/arrow-golden.svg') }}"
+                                        alt="" /></i>
                             </a>
                         </li>
                     @empty
@@ -785,11 +797,15 @@
                         </p>
 
                         <div class="consult-icons">
-                            <a href="https://api.whatsapp.com/send/?phone=919833006916&text&type=phone_number&app_absent=0"><img src="{{ asset('storage/assets/web/img/watsap-white-icon.svg') }}"
+                            <a
+                                href="https://api.whatsapp.com/send/?phone=919833006916&text&type=phone_number&app_absent=0"><img
+                                    src="{{ asset('storage/assets/web/img/watsap-white-icon.svg') }}"
                                     alt="" /></a>
-                            <a href="mailto:care@manicare.com"><img src="{{ asset('storage/assets/web/img/mail-white-icon.svg') }}"
+                            <a href="mailto:care@manicare.com"><img
+                                    src="{{ asset('storage/assets/web/img/mail-white-icon.svg') }}"
                                     alt="" /></a>
-                            <a href="tel:+9833006916"><img src="{{ asset('storage/assets/web/img/call-white-icon.svg') }}"
+                            <a href="tel:+9833006916"><img
+                                    src="{{ asset('storage/assets/web/img/call-white-icon.svg') }}"
                                     alt="" /></a>
                         </div>
                     </div>
@@ -817,24 +833,31 @@
                 @forelse(($paperBlogs ?? []) as $blog)
                     @php
                         $defaultImg = asset('storage/assets/web/img/paper-one.jpg');
-                        $imgUrl = $blog->featured_image ? asset('storage/' . $blog->featured_image) : ($blog->thumbnail ? asset('storage/' . $blog->thumbnail) : $defaultImg);
+                        $imgUrl = $blog->featured_image
+                            ? asset('storage/' . $blog->featured_image)
+                            : ($blog->thumbnail
+                                ? asset('storage/' . $blog->thumbnail)
+                                : $defaultImg);
                     @endphp
                     <div class="swiper-slide">
                         <div class="paper-card">
-                            <img src="{{ $imgUrl }}" alt="{{ $blog->title }}" onerror="this.onerror=null; this.src='{{ $defaultImg }}';" />
+                            <img src="{{ $imgUrl }}" alt="{{ $blog->title }}"
+                                onerror="this.onerror=null; this.src='{{ $defaultImg }}';" />
                             <div class="tags">
                                 <span class="tag blog">Blog</span>
-                                @if($blog->category)
+                                @if ($blog->category)
                                     <span class="tag payroll">{{ $blog->category->name }}</span>
                                 @endif
-                                @if($blog->tags && is_array($blog->tags))
-                                    @foreach(array_slice($blog->tags, 0, 2) as $tag)
-                                        <span class="tag">{{ is_string($tag) ? $tag : ($tag['name'] ?? '') }}</span>
+                                @if ($blog->tags && is_array($blog->tags))
+                                    @foreach (array_slice($blog->tags, 0, 2) as $tag)
+                                        <span class="tag">{{ is_string($tag) ? $tag : $tag['name'] ?? '' }}</span>
                                     @endforeach
                                 @endif
                             </div>
                             <p>{{ Str::limit($blog->title ?? strip_tags($blog->title), 120) }}</p>
-                            <a href="{{ route('blog.show', $blog->slug) }}">Read More <img src="{{ asset('storage/assets/web/img/purple-arrow.svg') }}" alt="" width="16" /></a>
+                            <a href="{{ route('blog.show', $blog->slug) }}">Read More <img
+                                    src="{{ asset('storage/assets/web/img/purple-arrow.svg') }}" alt=""
+                                    width="16" /></a>
                         </div>
                     </div>
                 @empty
@@ -909,29 +932,32 @@
 
         document.addEventListener("DOMContentLoaded", function() {
             new Swiper(".sectorsSwiper", {
-                // slidesPerView: 1.2,
+                slidesPerView: 1,
                 spaceBetween: 0,
                 loop: true,
-                // autoplay: true,
-                //  autoplaySpeed: 2500,
-                loopAdditionalSlides: 4,
-   autoplay: {
-            delay: 2500,
-            disableOnInteraction: true,
-            // reverseDirection: false,
-        }, 
+                autoplay: {
+                    delay: 2000,
+                    disableOnInteraction: false,
+                    reverseDirection: false,
+                },
+                // pagination: {
+                //     el: ".swiper-pagination",
+                //     clickable: true,
+                // },
+                // navigation: {
+                //     nextEl: ".swiper-next-legacy-slider-69985434a0dd8",
+                //     prevEl: ".swiper-prev-legacy-slider-69985434a0dd8",
+                // },
                 breakpoints: {
-                    640: {
-                        slidesPerView: 1.9,
-                        spaceBetween: 30,
-                        // loopAdditionalSlides: 2,
-                    },
-                    1024: {
-                        slidesPerView: 5.9,
-                    },
+                    320: { slidesPerView: 1, spaceBetween: 0   , centeredSlides: true },
+                    768: { slidesPerView: 2, spaceBetween: 0 },
+                    1024: { slidesPerView: 4, spaceBetween: 0 },
+                    1200: { slidesPerView: 5, spaceBetween: 0 },
+                    1400: { slidesPerView: 6, spaceBetween: 0 },
+                    1600: { slidesPerView: 7, spaceBetween: 0 },
                 },
             });
-            
+
             const paperSwiper = new Swiper(".paperSwiper", {
                 loop: true,
                 loopAdditionalSlides: 4,

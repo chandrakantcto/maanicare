@@ -17,7 +17,7 @@ class ConsultationRequestController extends Controller
             'email'                 => ['required', 'email'],
             'phone'                 => ['nullable', 'string', 'max:50'],
             'preferred_reach_time'  => ['nullable', 'string', 'in:Morning,Afternoon,Evening'],
-            'good_reach_time'       => ['nullable', 'string', 'in:Morning,Afternoon,Evening'],
+            'good_reach_time'       => ['nullable', 'string', 'max:50'],
         ]);
 
         ConsultationRequest::create($validated);
