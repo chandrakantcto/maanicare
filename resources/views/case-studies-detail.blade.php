@@ -14,7 +14,7 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="{{ $caseStudy->title }}">
     <meta name="twitter:description" content="{{ $shareDesc }}">
-    <meta name="twitter:image" content="{{ $shareImage }}">
+    <meta name="twitter:image" content="{{ $shareImage }}">  
 @endsection
 
 @section('content')
