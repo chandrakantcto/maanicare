@@ -1,0 +1,148 @@
+# Case Study Module Requirements
+
+**Project**: MaaniCare Website – Dynamic Case Studies / Projects Section  
+**Date**: February 06, 2026  
+**Goal**: Fully dynamic case study pages jisme admin panel se unlimited sections add/edit/remove kar sake, TinyMCE editor ke saath content manage ho, ek fixed intro/vision section structured fields mein rahe, aur har case study ko ek predefined category assign kiya ja sake (dropdown se select).
+
+## 1. Database Tables
+
+### 1.1 case_study_categories (Predefined Categories Table – CRUD supported)
+
+- id (primary key, auto-increment)
+- name → required, string(100), unique  
+  Predefined values (seed karte time insert):
+  - "Project & Fit-Out Services"
+  - "Staffing, Payroll & Compliance Services"
+  - "Integrated Facility Management Services"
+  - "On-Demand Services"
+- slug → string(100), unique (auto-generated from name, e.g. project-fit-out-services)
+- description → nullable, text (optional – category ke baare mein short info)
+- icon → nullable, string(100) (e.g. "cube", "users", "building", "tool" – frontend icons ke liye)
+- is_active → boolean, default true
+- order → integer, default 0 (frontend sorting ke liye)
+- timestamps (created_at, updated_at)
+- softDeletes (optional – safety ke liye)
+
+**Note**: Yeh table static nature ki hai (normally sirf 4 entries). Admin mein CRUD allowed rahega lekin production mein delete rarely hoga.
+
+### 1.2 case_studies (Main Table – Updated with Category Field)
+
+- id (primary key)
+- slug → unique, string (URL friendly, auto from title)
+- title → required, string(255)
+- subtitle → nullable, string(255)
+- hero_image → nullable, string (path)
+- short_description → nullable, text
+
+**Fixed Vision/Intro Section**:
+- vision_heading → nullable, string(255), default "A Wildlife Vision That Needed World-Class Operations"
+- vision_intro_paragraph → nullable, longText
+- vision_bullets → nullable, json (array of bullets)
+- vision_transition_text → nullable, longText
+- vision_closing_line → nullable, string(255)
+
+**Client & Project**:
+- client_name → nullable, string(255)
+- project_name → nullable, string(255)
+- project_location → nullable, string(255)
+
+**Category Assignment** (Extra Field as per requirement):
+- case_study_category_id → nullable, unsignedBigInteger  
+  foreign key references case_study_categories.id  
+  onDelete('set null')  // agar category delete ho to field null ho jaye
+
+**SEO & Status**:
+- meta_title → nullable, string(255)
+- meta_description → nullable, text
+- meta_keywords → nullable, string
+- is_published → boolean, default false
+- published_at → nullable, timestamp
+
+- timestamps
+- softDeletes
+
+### 1.3 case_study_sections (Dynamic Sections – No change)
+
+- id
+- case_study_id → foreign, cascade delete
+- section_key → nullable, string
+- title → nullable, string(255)
+- order → integer
+- content → longText (TinyMCE)
+- show_title → boolean default true
+- is_visible → boolean default true
+- timestamps
+
+## 2. Admin Panel Form Requirements
+
+### 2.1 Main Case Study Form (case_studies)
+
+- Title (required)
+- Slug (auto/live)
+- Subtitle
+- Hero Image (upload)
+- Short Description (textarea)
+- Vision Section Fields (as before: heading, paragraph, bullets repeater, transition, closing)
+- Client Name, Project Name, Location
+- **Category Dropdown** (Extra Field – Required/Optional as per business rule):
+  - Type: Select / Dropdown
+  - Label: "Service Category"
+  - Options: Dynamically fetch from case_study_categories table (only where is_active = true)
+    - Display: name
+    - Value: id
+  - Placeholder: "Select a Category"
+  - Sorting: by 'order' column
+  - Nullable ya required – business decide (e.g. required if case study category-based show karna hai)
+- SEO Fields
+- Publish Toggle + Date
+
+### 2.2 Dynamic Sections (Repeater)
+
+- "Add New Section" button
+- Each section: Title (text) + TinyMCE Content (editor) + Show Title checkbox + Visible checkbox
+- Reorderable (drag-drop), removable, cloneable
+
+### 2.3 Categories CRUD (Separate Admin Resource)
+
+- List: Show all categories (name, slug, icon, description, order, active)
+- Create/Edit Form:
+  - Name (text)
+  - Slug (auto/manual)
+  - Description (textarea)
+  - Icon (text or icon picker)
+  - Order (number input)
+  - Active (toggle)
+- Delete with confirmation
+
+## 3. Seeder for Categories
+
+Seeder file mein yeh 4 categories insert karo:
+
+```php
+CaseStudyCategory::create([
+    'name' => 'Project & Fit-Out Services',
+    'slug' => 'project-fit-out-services',
+    'icon' => 'cube',  // or FontAwesome/Heroicons class
+    'order' => 1,
+]);
+
+CaseStudyCategory::create([
+    'name' => 'Staffing, Payroll & Compliance Services',
+    'slug' => 'staffing-payroll-compliance',
+    'icon' => 'users',
+    'order' => 2,
+]);
+
+CaseStudyCategory::create([
+    'name' => 'Integrated Facility Management Services',
+    'slug' => 'integrated-facility-management',
+    'icon' => 'building',
+    'order' => 3,
+]);
+
+CaseStudyCategory::create([
+    'name' => 'On-Demand Services',
+    'slug' => 'on-demand-services',
+    'icon' => 'tool',
+    'order' => 4,
+]);
