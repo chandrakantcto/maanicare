@@ -10,8 +10,9 @@ use Yajra\DataTables\Html\Builder as HtmlBuilder;
 use Yajra\DataTables\Html\Column;
 use Yajra\DataTables\Services\DataTable;
 
-class AccessRequestDataTable extends DataTable
+class AccessRequestDataTable extends DataTable   
 {
+    
     protected $dataTableId = 'AccessRequestDataTable';
 
     public function dataTable(QueryBuilder $query): EloquentDataTable
